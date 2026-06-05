@@ -1,6 +1,9 @@
+"use client"
+
 import React from 'react'
 import Typography from '../shared/typography'
 import { Button } from '../ui/button'
+import Link from 'next/link'
 
 export default function Navbar () {
     return (
@@ -9,10 +12,14 @@ export default function Navbar () {
                 <Typography variant="h2">Mohan Builder</Typography>
                 <ul className='flex flex-1 justify-end gap-6 items-center'>
                     <li>
-                        <Button variant={"ghost"}>Monsters</Button>
+                        <Button variant={"ghost"}>
+                            <Link href="/monsters">Monsters</Link>
+                        </Button>
                     </li>
                     <li>
-                        <Button variant={"ghost"}>Weapons</Button>
+                        <Button variant={"ghost"}>
+                            <Link href="/weapons">Weapons</Link>
+                        </Button>
                     </li>
                     <li>
                         <Button>Sign In</Button>
