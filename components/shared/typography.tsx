@@ -1,10 +1,9 @@
 import { cn } from '@/lib/utils';
 import React from 'react'
 
-const variants = ['h1', 'h2', 'h3', 'h4', 'p'] as const
-
+type Variant = 'h1' | 'h2' | 'h3' | 'h4' | 'p'
 interface TypographyProps {
-  variant: typeof variants[number];
+  variant: Variant;
   className?: string,
   children: React.ReactNode
 }
