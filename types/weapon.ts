@@ -2,6 +2,10 @@ import { CraftingCost, ElementType } from ".";
 
 export type DamageType = 'blunt' | 'piercing' | 'slashing';
 export type EldersealType = 'low' | 'average' | 'high' | null;
+export type WeaponType = 
+  | 'great-sword' | 'long-sword' | 'sword-and-shield' | 'dual-blades' 
+  | 'hammer' | 'hunting-horn' | 'lance' | 'gunlance' | 'switch-axe' 
+  | 'charge-blade' | 'insect-glaive' | 'light-bowgun' | 'heavy-bowgun' | 'bow';
 
 export interface Attack {
   display: number; // The attack value displayed in game [5]
