@@ -4,7 +4,8 @@ import Content from './content'
 
 export interface UniqueWeapon {
     type: WeaponType,
-    icon?: string
+    icon?: string,
+    count: number
 }
 
 const Page = async () => {
